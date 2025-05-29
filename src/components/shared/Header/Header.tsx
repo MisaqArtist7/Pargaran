@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import { MagnifyingGlassIcon, ShoppingBagIcon, UserIcon } from '@heroicons/react/24/outline';
+import './header.css'
+import { MagnifyingGlassIcon, ShoppingBagIcon, UserIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 
 export default function Header() {
   return (
-    <header className='header bg-white py-5 shadow-xs'>
-      {/* Main container */}
+    <header className='header flex flex-col gap-y-7 bg-white py-5 shadow-xs'>
+      {/* search & login container */}
       <div className='header__container container flex items-center justify-between'>
         
         {/* Logo and search section */}
@@ -32,6 +33,25 @@ export default function Header() {
             ورود و عضویت
           </a>
         </div>
+      </div>
+      {/* navbar container */}
+      <div className="header__navigation container text-[var(--text-gray)]">
+        {/* navlink */}
+        <ul className="header__navigation-list flex items-center gap-x-4">
+          <li className="header__navigation-item">
+            <a href="" className="header__navigation-link flex-row-center gap-x-1">
+              دسته بندی محصولات
+              <ChevronDownIcon className="header__navigation-icon w-4 h-4" strokeWidth={2.5} />
+            </a>
+          </li>
+          <li className="header__navigation-item">مقالات</li>
+          <li className="header__navigation-item">درباره پرگاران</li>
+          <li className="header__navigation-item">تماس با ما</li>
+          <li className="header__navigation-item">آموزش plc</li>
+          <li className="header__navigation-item">سیستم های کنترل</li>
+          <li className="header__navigation-item">سیستم ابزار ایمنی</li>
+          <li className="header__navigation-item">سیستم آتش نشانی و گاز</li>
+        </ul>
       </div>
     </header>
   )

@@ -4,7 +4,8 @@
   --background: #F3F3F3;
   --foreground: #171717;
   --mainOrange: #E7632B;
-  --mainBlue: #0984e3;
+  --mainBlue:   #0984e3;
+  --text-gray:  #373737;
 }
 
 @layer base {
