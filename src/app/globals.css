@@ -62,3 +62,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--background);
 }
+.offer {
+  position: relative;
+  background-color: var(--mainOrange);
+  overflow: hidden;
+}
+
+.offer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/images/transparentLineBg.png') center center / cover;
+  filter: opacity(0.2);
+  z-index: 0;
+}
+
+.offer > * {
+  position: relative;
+  z-index: 1;
+}
+
