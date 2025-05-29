@@ -23,6 +23,9 @@
   input{
     outline: none;
   }
+  a:hover, button:hover{
+    cursor: pointer;
+  }
   .container {
   width: 100%;
   margin-left: auto;
