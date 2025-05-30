@@ -1,11 +1,20 @@
 import React from 'react'
 import Image from 'next/image'
 import './header.css'
-import { MagnifyingGlassIcon, ShoppingBagIcon, UserIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
+import { MagnifyingGlassIcon, ShoppingBagIcon, UserIcon, ChevronDownIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 
 export default function Header() {
   return (
-    <header className='header flex flex-col gap-y-7 bg-white py-5 shadow-xs'>
+    <header className='header flex flex-col gap-y-7 bg-white pb-5 shadow-xs'>
+      <div className='bg-gray-100 shadow py-4'>
+        <div className='container flex items-center justify-between text-[var(--text-gray)]'>
+          <p>بازدید کننده محترم، تا اطلاع ثانوی جهت استعلام محصولات وثبت درخواست تنها ازطریق ایمیل با ما در ارتباط باشید</p>
+          <a href="" className='flex-row-center gap-x-1 hover:text-[var(--mainOrange)]'>
+          <EnvelopeIcon className="w-6 h-6" />
+          info@pargaran.com
+          </a>  
+        </div>
+      </div>
       {/* search & login container */}
       <div className='header__container container flex items-center justify-between'>
         
@@ -28,7 +37,7 @@ export default function Header() {
             <span className='header__cart-count absolute -top-1 -right-1 w-4 h-4 text-xs text-white bg-[var(--mainOrange)] flex-row-center rounded-full'>0</span>
           </a>
           
-          <a href="" className='header__login flex-row-center gap-x-1 px-4 py-2 rounded border bg-[#E7632B] text-white'>
+          <a href="" className='header__login flex-row-center gap-x-1 px-4 py-2 rounded border bg-[var(--mainOrange)] text-white'>
             <UserIcon className='w-6 h-6' />
             ورود و عضویت
           </a>

@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F3F3F3;
+  --background: #eff1f5;
   --foreground: #171717;
   --mainOrange: #E7632B;
   --mainBlue:   #0984e3;
   --text-gray:  #373737;
   --primaryShadow: 0 0 17px #e7632b4c;
+  --secondaryShadow: 0 0 7px rgba(0, 0, 0, 0.177);
 }
 
 
@@ -66,7 +67,7 @@ body {
 }
 .offer {
   position: relative;
-  background-color: var(--mainOrange);
+  background-color: var(--mainBlue);
   overflow: hidden;
 }
 
@@ -84,3 +85,6 @@ body {
   z-index: 1;
 }
 
+.footer{
+  height: 300px;
+}
