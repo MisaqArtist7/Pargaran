@@ -1,5 +1,6 @@
 import React from 'react'
 import Service from '@/components/ui/Service'
+import ProductSlider from '@/components/ui/Product';
 export default function Home() {
   return (
     <>
@@ -12,7 +13,9 @@ export default function Home() {
           <a href="" className='bg-white border-2 font-semibold border-white rounded-lg px-6 py-2 text-[var(--mainBlue)] hover:bg-[var(--mainBlue)] hover:text-white'>رفتن به حراجی</a>
         </section>
         {/* Slider */}
-        <section className='slider'></section>
+        <section className='slider container my-11'>
+            <ProductSlider />
+        </section>
         {/* Services */}
         <section className='services container mt-11'>
           <h2 className='font-semibold text-3xl my-5 text-center text-[var(--text-gray)]'>سرویس های ما</h2>
