@@ -6,7 +6,9 @@
   --mainOrange: #E7632B;
   --mainBlue:   #0984e3;
   --text-gray:  #373737;
+  --primaryShadow: 0 0 17px #e7632b75;
 }
+
 
 @layer base {
   /* Helper classes */  
